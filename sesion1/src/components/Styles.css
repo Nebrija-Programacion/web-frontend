@@ -1,0 +1,18 @@
+.Asignatura{
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    padding: 20px;    
+}
+
+.Alumnos {
+    border: 1px solid rgb(105, 105, 105);
+    margin: 10px;
+    padding: 20px;
+}
+
+.Profesor {
+    border: 1px solid rgb(105, 105, 105);
+    background-color: blanchedalmond;
+    margin: 10px;
+    padding: 20px;
+}
