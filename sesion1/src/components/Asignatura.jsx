@@ -1,27 +1,31 @@
-import React from 'react';
-import Profesor from './Profesor';
-import Alumnos from './Alumnos';
+import React from "react";
+import Profesor from "./Profesor";
+import Alumnos from "./Alumnos";
 
-import "./Styles.css"
+import "./Styles.css";
 
-const Asignatura = (props) => {
-    return(
-        <div className="Asignatura">
-            <div>
-                <h1>{props.asignatura}</h1>
-            </div>
-            <Profesor name = {props.profesor}></Profesor>
-            <Alumnos
-                alu1 = {props.alu1}
-                alu2 = {props.alu2}
-                alu3 = {props.alu3}
-                nota1 = {props.nota1}
-                nota2 = {props.nota2}
-                nota3 = {props.nota3}
-            >
-            </Alumnos>
-        </div>
+const Asignatura = props => {
+  const { asignatura, profesor, alumnos, visible } = props.asignatura;
+  const { asignaturaOnClick, alumnoOnClick } = props;
+  if (visible) {
+    return (
+      <div className="Asignatura">
+        <h1 onClick={() => asignaturaOnClick(asignatura)}>{asignatura}</h1>
+        <Profesor name={profesor}></Profesor>
+        <Alumnos
+          alumnos={alumnos}
+          asignatura={asignatura}
+          alumnoOnClick={alumnoOnClick}
+        ></Alumnos>
+      </div>
     );
-}
+  } else {
+    return (
+      <div className="Asignatura">
+        <h1 onClick={() => asignaturaOnClick(asignatura)}>{asignatura}</h1>
+      </div>
+    );
+  }
+};
 
-export {Asignatura as default}
+export { Asignatura as default };
