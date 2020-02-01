@@ -19,18 +19,15 @@ const Alumnos = props => {
 
   return (
     <div className="Alumnos">
-      <span onClick={() => alumnoOnClick(alu1, asignatura)}>
-        {alu1} - {nota1Enabled ? nota1 : ""}
-      </span>
-      <br />
-      <span onClick={() => alumnoOnClick(alu2, asignatura)}>
-        {alu2} - {nota2Enabled ? nota2 : ""}
-      </span>
-      <br />
-      <span onClick={() => alumnoOnClick(alu3, asignatura)}>
-        {alu3} - {nota3Enabled ? nota3 : ""}
-      </span>
-      <br />
+      {props.alumnos.map(alumno => (
+        <span
+          key={alumno.name}
+          onClick={() => alumnoOnClick(alumno.name, asignatura)}
+        >
+          {alumno.name} - {alumno.visible ? alumno.nota : null}
+          <br />
+        </span>
+      ))}
     </div>
   );
 };

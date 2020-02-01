@@ -79,16 +79,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Asignatura
-          asignatura={this.state.data[0]}
-          asignaturaOnClick={this.asignaturaOnClickHandler}
-          alumnoOnClick={this.alumnoOnClickHandler}
-        />
-        <Asignatura
-          asignatura={this.state.data[1]}
-          asignaturaOnClick={this.asignaturaOnClickHandler}
-          alumnoOnClick={this.alumnoOnClickHandler}
-        />
+        {this.state.data.map(obj => (
+          <Asignatura
+            key={obj.asignatura}
+            asignatura={obj}
+            asignaturaOnClick={this.asignaturaOnClickHandler}
+            alumnoOnClick={this.alumnoOnClickHandler}
+          />
+        ))}
       </div>
     );
   }
