@@ -2,18 +2,6 @@ import React from "react";
 import "./Styles.css";
 
 const Alumnos = props => {
-  const alu1 = props.alumnos[0].nombre;
-  const alu2 = props.alumnos[1].nombre;
-  const alu3 = props.alumnos[2].nombre;
-
-  const nota1 = props.alumnos[0].nota;
-  const nota2 = props.alumnos[1].nota;
-  const nota3 = props.alumnos[2].nota;
-
-  const nota1Enabled = props.alumnos[0].visible;
-  const nota2Enabled = props.alumnos[1].visible;
-  const nota3Enabled = props.alumnos[2].visible;
-
   const asignatura = props.asignatura;
   const alumnoOnClick = props.alumnoOnClick;
 
@@ -21,10 +9,10 @@ const Alumnos = props => {
     <div className="Alumnos">
       {props.alumnos.map(alumno => (
         <span
-          key={alumno.name}
-          onClick={() => alumnoOnClick(alumno.name, asignatura)}
+          key={alumno.nombre}
+          onClick={() => alumnoOnClick(alumno.nombre, asignatura)}
         >
-          {alumno.name} - {alumno.visible ? alumno.nota : null}
+          {alumno.nombre} - {alumno.visible ? alumno.nota : null}
           <br />
         </span>
       ))}
