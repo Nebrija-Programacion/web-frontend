@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import cloneDeep from "clone-deep";
 import "./App.css";
 import Header from "./components/Header"
-import Asignatura from "./components/Asignatura";
+import Contents from "./components/Contents";
 
 class App extends Component {
   state = {
@@ -81,14 +81,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        {this.state.data.map(obj => (
-          <Asignatura
-            key={obj.asignatura}
-            asignatura={obj}
-            asignaturaOnClick={this.asignaturaOnClickHandler}
-            alumnoOnClick={this.alumnoOnClickHandler}
-          />
-        ))}
+        <Contents data = {this.state.data} />
       </div>
     );
   }

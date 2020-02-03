@@ -26,10 +26,18 @@
     text-align: center;
 }
 
-.Asignatura{
+.Contents{
+    background-color: cornsilk;
     border: 1px solid rgb(0, 0, 0);
     margin: 10px;
-    padding: 20px;    
+}
+
+.Asignatura{
+    background-color: ivory;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    padding: 20px;
+        
 }
 
 .Alumnos {
