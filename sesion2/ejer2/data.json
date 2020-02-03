@@ -1,6 +1,6 @@
 [
   {
-    asinatura: "Programacion I",
+    asignatura: "Programacion I",
     id: 1,
     curso: 1,
     profesor: "Alberto Valero",
@@ -23,7 +23,7 @@
     ]
   },
   {
-    asinatura: "Estructura de Datos",
+    asignatura: "Estructura de Datos",
     id: 2,
     curso: 1,
     profesor: "Jose Emilio Torres",
@@ -46,7 +46,7 @@
     ]
   },
   {
-    asinatura: "Estructura de Datos",
+    asignatura: "Estructura de Datos",
     id: 2,
     curso: 1,
     profesor: "Jose Emilio Torres",
@@ -69,7 +69,7 @@
     ]
   },
   {
-    asinatura: "Java",
+    asignatura: "Java",
     id: 3,
     curso: 2,
     profesor: "Jorge Comosellame",
@@ -92,7 +92,7 @@
     ]
   },
   {
-    asinatura: "Backend",
+    asignatura: "Backend",
     id: 4,
     curso: 3,
     profesor: "Alberto Otravez",
