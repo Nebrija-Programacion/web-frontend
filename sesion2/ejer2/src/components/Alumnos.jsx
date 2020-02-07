@@ -2,18 +2,25 @@ import React from "react";
 import "./Styles.css";
 
 const Alumnos = props => {
-  const asignatura = props.asignatura;
-  const alumnoOnClick = props.alumnoOnClick;
+  
+
+  const filtered = props.aprobado === 0 ?
+    props.alumnos :
+    props.alumnos.filter( obj => {
+      if (props.aprobado === 1) return obj.nota >= 5;
+      if (props.aprobado === 2) return obj.nota < 5;
+    });
+
+  console.log(filtered);
 
   return (
     <div className="Alumnos">
-      {props.alumnos.map(alumno => (
+      {filtered.map(alumno => (
         <div className="Alumno"
-          key={alumno.nombre}
-          onClick={() => alumnoOnClick(alumno.nombre, asignatura)}
+          key={alumno.id}
         >
           <div className="AlumnoData">{alumno.nombre}</div>
-          <div className="AlumnoData">{alumno.visible ? alumno.nota : null}</div>
+          <div className="AlumnoData">{alumno.nota}</div>
         </div>
       ))}
     </div>
