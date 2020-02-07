@@ -11,8 +11,6 @@ const Alumnos = props => {
       if (props.aprobado === 2) return obj.nota < 5;
     });
 
-  console.log(filtered);
-
   return (
     <div className="Alumnos">
       {filtered.map(alumno => (
