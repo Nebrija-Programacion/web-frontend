@@ -10,7 +10,7 @@ const Contents = props => {
         asignaturas :  
         asignaturas.filter(obj => props.curso === obj. curso);
     
-    console.log(`aprobado ${props.aprobado}`);
+    
     return (
         <div className="Contents">{
             filtered.map(obj => (
