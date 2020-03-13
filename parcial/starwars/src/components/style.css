@@ -1,0 +1,61 @@
+#root {
+  height: 100%;
+}
+.App {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+
+.FilmDetail {
+  display: flex;
+  flex-direction: row;
+}
+
+.CloseIcon {
+  width: 30px;
+}
+
+.Films {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.FilmPoster {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.FilmDetailPoster {
+  width: 40%;
+  margin-right: 20px;
+}
+
+.FilmTitle {
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.FilmData {
+  vertical-align: middle;
+  font-weight: normal;
+}
+
+.Film {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+.Detail {
+  padding: 20px;
+  width: 40%;
+  border-left: 2px solid #000000;
+  background: #edf1f1;
+}
