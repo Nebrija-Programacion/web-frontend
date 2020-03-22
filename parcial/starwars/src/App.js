@@ -4,7 +4,6 @@ import Films from "./components/Films";
 import Detail from "./components/Detail";
 import "./components/style.css";
 import data from "./assets/data.json";
-import Logo from "./assets/Star_Wars_Logo.svg";
 
 class App extends Component {
   state = {

@@ -1,0 +1,11 @@
+{
+  "darksky": {
+    "api_key": "f2dcc8818f7f771dd34cdb891a25b30e",
+    "url": "https://api.darksky.net/forecast/",
+    "proxy": "https://cors-anywhere.herokuapp.com/"
+  },
+  "maps": {
+    "api_key": "AIzaSyDE3UeMlhgHrtUfgTernuuMSfCe65wAFK8",
+    "url": "https://maps.googleapis.com/maps/api/geocode/"
+  }
+}
