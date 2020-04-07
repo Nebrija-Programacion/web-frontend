@@ -1,0 +1,16 @@
+.Selected {
+  padding: 6px 20px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.City {
+  font-weight: bolder;
+  margin-bottom: 5px;
+  font-size: x-large;
+}
+
+.Details {
+  padding-left: 10px;
+  border-left: 10px solid steelblue;
+}
