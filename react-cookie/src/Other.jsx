@@ -5,7 +5,7 @@ const Other = () => {
   const [cookies, setCookie, removeCookie] = useCookies(["webtoken"]);
   return (
     <div>
-      <p>La cookie token vale: {cookies.token}</p>
+      <p>La cookie view-menu vale: {cookies["view-menu"]}</p>
     </div>
   );
 };

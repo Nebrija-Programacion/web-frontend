@@ -8,10 +8,8 @@ function App() {
   const [cookies, setCookie, removeCookie] = useCookies(["webtoken"]);
 
   useEffect(() => {
-    setCookie("token", "12345678");
-    return () => {
-      removeCookie("token");
-    };
+    setCookie("view-menu", "true");
+    return () => {};
   }, []);
 
   return (
