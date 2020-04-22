@@ -9,6 +9,8 @@ import { setContext } from "apollo-link-context";
 
 import "./App.css";
 
+import GitHubQuery from "./components/GitHubQuery";
+
 function App() {
   const [token, setToken] = useState(null);
 
@@ -49,7 +51,9 @@ function App() {
 
     return (
       <ApolloProvider client={client}>
-        <div className="App">{token}</div>
+        <div className="App">
+          <GitHubQuery />
+        </div>
       </ApolloProvider>
     );
   }
