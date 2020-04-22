@@ -7,21 +7,18 @@ import {
 } from "@apollo/client";
 import { setContext } from "apollo-link-context";
 
-import "./App.css";
-
 import GitHubQuery from "./components/GitHubQuery";
 
 function App() {
   const [token, setToken] = useState(null);
 
   const onAuthenticate = (token) => {
-    console.log(token);
     setToken(token);
   };
 
   if (!token)
     return (
-      <div className="App">
+      <div>
         <input id="token" placeholder="github token" />
         <button
           onClick={() => onAuthenticate(document.getElementById("token").value)}
