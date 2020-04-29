@@ -28,7 +28,7 @@ function App() {
   if (!token)
     return (
       <div>
-        <input id="token" placeholder="github token" />
+        <input id="token" placeholder="lotr api token" />
         <button
           onClick={() => onAuthenticate(document.getElementById("token").value)}
         >
