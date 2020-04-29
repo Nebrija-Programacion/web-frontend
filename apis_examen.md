@@ -5,6 +5,7 @@ En los exámenes en convocatoria o extraordinaria el alumno deberá realizar una
 * RickyMorty - API REST: https://rickandmortyapi.com/documentation/#rest
 * RickyMorty - GraphQL: https://rickandmortyapi.com/documentation/#graphql
 * StarWars API - API REST: https://swapi.dev/documentation
+* The Lord of the RINGS API - API REST: https://the-one-api.herokuapp.com/documentation
 * Dark Sky API - API REST: https://darksky.net/dev
 * MapBOX API - API REST: https://docs.mapbox.com/api/
 * GitHub API - GraphQL: https://developer.github.com/v4/
