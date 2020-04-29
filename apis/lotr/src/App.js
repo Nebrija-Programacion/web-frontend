@@ -32,7 +32,10 @@ function App() {
       <div className="App">
         <input id="token" placeholder="lotr api token" />
         <button
-          onClick={() => onAuthenticate(document.getElementById("token").value)}
+          onClick={() => {
+            setError(null);
+            onAuthenticate(document.getElementById("token").value);
+          }}
         >
           Authenticate
         </button>
