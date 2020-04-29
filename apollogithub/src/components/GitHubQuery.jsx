@@ -19,11 +19,11 @@ const QUERY = gql`
 
 const GitHubQuery = () => {
   const { loading, data, error } = useQuery(QUERY, {
-    variables: { number_of_repos: 20 },
+    variables: { number_of_repos: 100 },
   });
 
   if (loading) return <div>loading...</div>;
-  if (error) return <div>{error.info} </div>;
+  if (error) return <div>Error: {error} </div>;
 
   return (
     <div>
