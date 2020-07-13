@@ -4,6 +4,7 @@ import gql from "graphql-tag";
 import { sessionState } from "../recoil/atoms";
 import { useRecoilState } from "recoil";
 import styled from "styled-components";
+import { OK, Error, Title } from "../style/styles";
 
 const UPLOAD_FILE = gql`
   mutation uploadFile($userid: ID!, $token: String!, $upload: Upload!) {
@@ -53,7 +54,7 @@ export default () => {
   }
 
   if (data) {
-    const url = `http://192.168.0.101/${data.uploadFile.url}`;
+    const url = `http://77.228.91.193/${data.uploadFile.url}`;
     return (<UploadFile>
       <OK>Archivo subido correctamente</OK>
       <Image src={url} />
@@ -91,11 +92,6 @@ const Image = styled.img`
   width: 200px;
 `;
 
-const Title = styled.h2`
-  font-size: 1.5em;
-  color: #000055;
-`;
-
 const Input = styled.input`
   width: 0.1px;
 	height: 0.1px;
@@ -117,20 +113,4 @@ const Label = styled.label`
     background-color: #aaaaaa;
     cursor: pointer
   }
-`;
-
-const Error = styled.div`
-  margin-top: 1em;
-  margin-bottom: 1em;
-  text-align: center;
-  font-size: 1.5em;
-  color: #ff1111;
-`;
-
-const OK = styled.div`
-  margin-top: 1em;
-  margin-bottom: 1em;
-  text-align: center;
-  font-size: 1.5em;
-  color: #11aa11;
 `;

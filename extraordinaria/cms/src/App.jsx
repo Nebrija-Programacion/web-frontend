@@ -14,7 +14,7 @@ const createApolloClient = (cache = {}) =>
   new ApolloClient({
     ssrMode: typeof window !== "undefined",
     cache: new InMemoryCache().restore(cache),
-    link: createUploadLink({ uri: "http://192.168.0.101:4000/graphql" }),
+    link: createUploadLink({ uri: "http://77.228.91.193:4000/graphql" }),
   });
 
 const App = ({

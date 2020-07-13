@@ -2,6 +2,7 @@ import React from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { gql } from "apollo-boost";
 import styled from "styled-components";
+import { OK, Error, Title } from "../style/styles";
 
 const INGEDIENTS_LIST_QUERY = gql`
   {
@@ -35,9 +36,4 @@ const IngredientsList = styled.div`
 
 const Ingredient = styled.div`
   margin-left: 1em;
-`;
-
-const Title = styled.h2`
-  font-size: 1.5em;
-  color: #000055;
 `;

@@ -4,6 +4,7 @@ import { useMutation } from "@apollo/react-hooks";
 import styled from "styled-components";
 import { useRecoilState } from "recoil";
 import { sessionState } from "../recoil/atoms";
+import { OK, Error, Title } from "../style/styles";
 
 const LOGIN_MUTATION = gql`
   mutation login($userName: String!, $pwd: String!) {
@@ -93,11 +94,6 @@ const Login = styled.div`
   justify-content: center;
 `;
 
-const Title = styled.h2`
-  font-size: 1.5em;
-  color: #000055;
-`;
-
 const Input = styled.input`
   border: 1px solid #333;
   height: 30px;
@@ -114,20 +110,4 @@ const Button = styled.button`
     background-color: #bbbbbb;
     cursor: pointer;
   }
-`;
-
-const Error = styled.div`
-  margin-top: 1em;
-  margin-bottom: 1em;
-  text-align: center;
-  font-size: 1.5em;
-  color: #ff1111;
-`;
-
-const OK = styled.div`
-  margin-top: 1em;
-  margin-bottom: 1em;
-  text-align: center;
-  font-size: 1.5em;
-  color: #11aa11;
 `;

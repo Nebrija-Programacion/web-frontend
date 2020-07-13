@@ -4,6 +4,7 @@ import { useMutation } from "@apollo/react-hooks";
 import styled from "styled-components";
 import { useRecoilState } from "recoil";
 import { sessionState, bodyState } from "../recoil/atoms";
+import { OK, Error, Title } from "../style/styles";
 
 const LOGOUT_MUTATION = gql`
   mutation logout($userid: ID!, $token: String!) {
@@ -20,7 +21,7 @@ export default () => {
   const [logoutMutation, { data }] = useMutation(LOGOUT_MUTATION, {
     onError(error) {
       setErrorMessage(
-        "Ha ocurrido un error inesperado, vuelve a intentarlo más tarde"
+        "Ha ocurrido un error inesperado, vuelve a intentarlo más tarde",
       );
     },
   });
@@ -40,11 +41,13 @@ export default () => {
     <Logout>
       <Title>Logout</Title>
       {errorMessage !== "" ? <Error>{errorMessage}</Error> : null}
-      {session.logged ? (
-        <Button onClick={() => logout(session.userid, session.token)}>
-          Confirme que desea salir
-        </Button>
-      ) : null}
+      {session.logged
+        ? (
+          <Button onClick={() => logout(session.userid, session.token)}>
+            Confirme que desea salir
+          </Button>
+        )
+        : null}
     </Logout>
   );
 };
@@ -52,19 +55,6 @@ export default () => {
 const Logout = styled.div`
   color: #333333;
   margin: 2em;
-`;
-
-const Title = styled.h2`
-  font-size: 1.5em;
-  color: #000055;
-`;
-
-const Error = styled.div`
-  margin-top: 1em;
-  margin-bottom: 1em;
-  text-align: center;
-  font-size: 1.5em;
-  color: #ff1111;
 `;
 
 const Button = styled.button`
