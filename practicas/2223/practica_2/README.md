@@ -1,4 +1,4 @@
-# Practica 2
+# Practica 1
 
 Realizar una aplicación web que en la ruta `/table` permita crear una tabla de modo dinámico.
 
