@@ -1,8 +1,12 @@
 import React from "react";
-import styled from "@emotion/styled";
+import PatientSlots from "@/Components/PatientSlots";
 
 const Page = () => {
-  return <>Paciente</>;
+  return (
+    <>
+      <PatientSlots />
+    </>
+  );
 };
 
 export default Page;

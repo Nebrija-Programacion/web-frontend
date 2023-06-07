@@ -28,3 +28,17 @@ export const REMOVE_SLOT = gql`
     }
   }
 `;
+
+export const BOOK_SLOT = gql`
+  mutation Mutation(
+    $year: Int!
+    $month: Int!
+    $day: Int!
+    $hour: Int!
+    $dni: String!
+  ) {
+    bookSlot(year: $year, month: $month, day: $day, hour: $hour, dni: $dni) {
+      available
+    }
+  }
+`;

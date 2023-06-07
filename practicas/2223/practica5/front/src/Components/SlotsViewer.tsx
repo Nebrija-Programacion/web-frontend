@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import styled from "@emotion/styled";
 import { Slot } from "@/types";
-import { ADD_SLOT, REMOVE_SLOT } from "@/queries";
+import { ADD_SLOT, BOOK_SLOT, REMOVE_SLOT } from "@/queries";
 import { useMutation } from "@apollo/client";
 
 type SlotComplete = Slot & {
@@ -15,31 +15,37 @@ const SlotsViewer: FC<{
   day: number;
   month: number;
   year: number;
+  dni?: string;
   refetch: () => Promise<any>;
-}> = ({ slots, doctor, day, month, year, refetch }) => {
+}> = ({ slots, doctor, day, month, year, refetch, dni }) => {
   const [addSlot] = useMutation(ADD_SLOT);
   const [removeSlot] = useMutation(REMOVE_SLOT);
+  const [bookSlot] = useMutation(BOOK_SLOT);
 
   // add all slots not present from 8:00 to 20:00 with created: false
   const slotsComplete: SlotComplete[] = [];
-  for (let i = 8; i < 20; i++) {
-    const slot = slots.find((slot) => slot.hour === i);
-    if (!slot) {
-      slotsComplete.push({
-        day,
-        month,
-        year,
-        hour: i,
-        created: false,
-        available: true,
-        dni: "",
-      });
-    } else {
-      slotsComplete.push({
-        ...slot,
-        created: true,
-      });
+  if (doctor) {
+    for (let i = 8; i < 20; i++) {
+      const slot = slots.find((slot) => slot.hour === i);
+      if (!slot) {
+        slotsComplete.push({
+          day,
+          month,
+          year,
+          hour: i,
+          created: false,
+          available: true,
+          dni: "",
+        });
+      } else {
+        slotsComplete.push({
+          ...slot,
+          created: true,
+        });
+      }
     }
+  } else {
+    slotsComplete.push(...slots.map((s) => ({ ...s, created: true })));
   }
 
   return (
@@ -53,6 +59,9 @@ const SlotsViewer: FC<{
         })}
       </h1>
       <Container>
+        {slotsComplete.length === 0 && (
+          <>No hay slots disponibles en la fecha indicada</>
+        )}
         {slotsComplete.map((slot) => {
           return (
             <Slot key={`${slot.day}-${slot.hour}-${slot.month}-${slot.year}`}>
@@ -93,6 +102,26 @@ const SlotsViewer: FC<{
                 >
                   Add Slot
                 </Action>
+              )}
+              {!doctor && slot.available ? (
+                <Action
+                  onClick={async () => {
+                    await bookSlot({
+                      variables: {
+                        day: slot.day,
+                        month: slot.month,
+                        year: slot.year,
+                        hour: slot.hour,
+                        dni,
+                      },
+                    });
+                    refetch();
+                  }}
+                >
+                  Book Slot
+                </Action>
+              ) : (
+                "Booked"
               )}
             </Slot>
           );
