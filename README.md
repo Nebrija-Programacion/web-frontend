@@ -6,7 +6,7 @@
 
 - Primeros pasos con Fresh
 - Ejemplos de Server Side Rendering
-- [https://www.youtube.com/watch?v=OxZu66p92BI](Video Youtube)
+- (https://www.youtube.com/watch?v=OxZu66p92BI)[Video Youtube]
 
 #### Tutorial #2
 
