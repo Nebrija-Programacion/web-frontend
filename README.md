@@ -12,9 +12,16 @@
 
 - Acceso a datos Server Side.
 - Recorriendo un array de datos.
+- [Video YouTbue](https://youtu.be/NFqR2NGrGUM)
 
 #### Tutorial #3
 
 - Creando rutas.
 - Rutas dinámincas.
 - Acceso a datos Server Side con rutas dinámicas.
+
+##### Proyecto
+
+¿Cómo harías una aplicación web en la que puedas ir adelante y atrás por las
+páginas de personajes y al hacer click sobre un personaje vaya a la página de
+ese personaje?
