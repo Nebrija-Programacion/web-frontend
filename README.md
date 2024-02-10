@@ -21,7 +21,7 @@
 - Acceso a datos Server Side con rutas dinámicas.
 - [Video YouTube](https://youtu.be/PNBKeR8wakg)
 
-##### Proyecto
+##### Proyecto #1
 
 ¿Cómo harías una aplicación web en la que puedas ir adelante y atrás por las
 páginas de personajes y al hacer click sobre un personaje vaya a la página de
@@ -30,3 +30,13 @@ ese personaje?
 - Demo: https://fresh-project-1.deno.dev/
 - Solución:
   [GitHub](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-1)
+
+#### Tutorial #4
+
+- _Debuggeando_ el código _server side_
+- [Video YouTube](https://youtu.be/PNBKeR8wakg)
+
+##### Proyecto #2
+
+- Demo:
+- Solución:
