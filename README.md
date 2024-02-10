@@ -40,7 +40,7 @@ ese personaje?
 
 - Interacción con formularios.
 - [Tutorial Deno](https://fresh.deno.dev/docs/getting-started/form-submissions)
-- [Video YouTube]()
+- [Video YouTube](https://youtu.be/Mp9IwDHrtG4)
 
 ##### Proyecto #2
 
