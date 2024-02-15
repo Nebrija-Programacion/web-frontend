@@ -44,5 +44,7 @@ ese personaje?
 
 ##### Proyecto #2
 
-- Demo:
-- Solución:
+Buscar datos por ciudad o por país y navegar entre ellos
+
+- Demo:https://fresh-project-2.deno.dev/
+- Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-2)
