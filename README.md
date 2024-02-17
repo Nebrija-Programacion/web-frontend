@@ -52,7 +52,7 @@ Buscar datos por ciudad o por país y navegar entre ellos
 #### Tutorial #6
 
 - Creando componentes funcionales Server Side
-- (Referencia Preact)[https://preactjs.com/guide/v10/typescript/#function-components]
+- [Referencia Preact](https://preactjs.com/guide/v10/typescript/#function-components)
 - [Video YouTube]()
 
 #### Tutorial #7
