@@ -18,9 +18,9 @@ export default async function Home() {
     );
     const characters = response.data.results;
     return (
-      <>
+      <div class="flex-column">
         <h1 class="mainTitle">Rick and Morty Characters</h1>
-        <div class="flex-row">
+        <div class="flex-row flex-around">
           {characters.map((char) => (
             <Character
               key={char.id}
@@ -30,7 +30,7 @@ export default async function Home() {
             />
           ))}
         </div>
-      </>
+      </div>
     );
   } catch (error) {
     return <div>{error.message}</div>;
