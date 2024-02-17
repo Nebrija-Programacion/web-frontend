@@ -48,3 +48,23 @@ Buscar datos por ciudad o por país y navegar entre ellos
 
 - Demo:https://fresh-project-2.deno.dev/
 - Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-2)
+
+#### Tutorial #6
+
+- Creando componentes funcionales Server Side
+- [Referencia Preact](https://preactjs.com/guide/v10/typescript/#function-components)
+- [Video YouTube](https://youtu.be/chRRjAymCgM)
+
+#### Tutorial #7
+
+- Aplicando estilos
+- [Video YouTube]() - pendiente
+
+##### Proyecto #3
+
+ - Crear un listado con los personajes de la página 1 de Rick&Morty (https://rickandmortyapi.com/api/character)
+ - Aplicar estilos según la demo (usar flex -- para aprender: https://flexboxfroggy.com/#es )
+
+- Demo:https://fresh-project-3.deno.dev/
+- Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-3)
+  
