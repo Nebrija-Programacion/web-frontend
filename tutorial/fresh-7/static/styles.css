@@ -1,0 +1,30 @@
+button.bg-red {
+    background-color: red;
+    color: white;
+}
+
+button.bg-red:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+button.bg-red:active {
+    background-color: white;
+    color: red;
+}
+
+button.bg-blue {
+    background-color: blue;
+    color: white;
+}
+
+button.bg-blue:hover {
+    background-color: #4d4dff;
+    color: white;
+}
+
+button.bg-blue:active {
+    background-color: white;
+    color: blue;
+}
+
