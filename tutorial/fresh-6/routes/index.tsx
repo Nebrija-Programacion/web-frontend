@@ -1,4 +1,5 @@
 import axios from "npm:axios";
+import Character from "../components/Character.tsx";
 
 type Character = {
   id: string;
@@ -18,16 +19,10 @@ export default async function Home() {
     );
     const characters = response.data.results;
     return (
-      <div class="flex-column">
-        <h1 class="mainTitle">Rick and Morty Characters</h1>
+      <div>
+        <h1>Rick and Morty Characters</h1>
         {characters.map((char) => (
-          <div>
-            <img src={char.image} alt={char.name} />
-            <p>
-              <strong>Status:</strong>
-              {char.status}
-            </p>
-          </div>
+          <Character name={char.name} image={char.image} status={char.status} />
         ))}
       </div>
     );
