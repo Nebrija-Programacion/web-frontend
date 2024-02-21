@@ -7,8 +7,10 @@ type ButtonProps = JSX.HTMLAttributes<HTMLButtonElement> & {
 const Button: FunctionComponent<ButtonProps> = (props) => {
   const { variant, children, ...rest } = props;
   return (
-    <button class={`button button--${variant}`} {...rest}>
+    <button class={`button ${variant}`} {...rest}>
       {children}
     </button>
   );
 };
+
+export default Button;

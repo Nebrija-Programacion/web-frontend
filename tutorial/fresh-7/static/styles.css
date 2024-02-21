@@ -1,29 +1,38 @@
-button.bg-red {
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button.primary {
     background-color: red;
     color: white;
 }
 
-button.bg-red:hover {
-    background-color: #ff4d4d;
+button.primary:hover {
+    background-color: #310303;
     color: white;
 }
 
-button.bg-red:active {
+button.primary:active {
     background-color: white;
     color: red;
 }
 
-button.bg-blue {
+button.secondary {
     background-color: blue;
     color: white;
 }
 
-button.bg-blue:hover {
-    background-color: #4d4dff;
+button.secondary:hover {
+    background-color: #060647;
     color: white;
 }
 
-button.bg-blue:active {
+button.secondary:active {
     background-color: white;
     color: blue;
 }
