@@ -58,7 +58,7 @@ Buscar datos por ciudad o por país y navegar entre ellos
 #### Tutorial #7
 
 - Aplicando estilos
-- [Video YouTube]() - pendiente
+- [Video YouTube](https://youtu.be/TjNR1YkXWUo)
 
 ##### Proyecto #3
 
