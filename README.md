@@ -71,5 +71,5 @@ Buscar datos por ciudad o por país y navegar entre ellos
 #### Tutorial #8
 
 - Layouts
-- [Video YouTube](https://youtu.be/bRcRG1s4x_c)
+- [Video YouTube](https://youtu.be/U3L7gFi9doE)
 
