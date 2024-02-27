@@ -1,43 +1,42 @@
 .contactlist {
-    width: 100%;
-    width: 100%;
-    max-width: 500px;
-    padding: 20px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
+  width: 100%;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 
-.contactlist li {
+  li {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     border-bottom: 1px solid #f0f0f0;
-}
+  }
 
-.contactlist li:last-child {
+  li:last-child {
     border-bottom: none;
-}
+  }
 
-.contactlist li span {
+  li span {
     font-size: 18px;
     font-weight: 500;
     color: #343a40;
-}
+  }
 
-.contactlist a {
+  a {
     color: #007bff;
     text-decoration: none;
     padding-left: 10px;
-}
+  }
 
-.contactlist a:hover {
+  a:hover {
     color: #0056b3;
+  }
 }
-
