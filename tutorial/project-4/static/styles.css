@@ -1,0 +1,12 @@
+@import url("/menu.css"); 
+@import url("/addform.css");
+@import url("/footer.css");
+@import url("/contactlist.css");
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #343a40;
+    text-align: center;
+}

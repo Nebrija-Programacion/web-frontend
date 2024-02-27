@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #343a40;
+  background-color: #f8f9fa;
+  
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.menu a {
+  margin-right: 20px;
+  color: #343a40;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu a.selected {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.menu a:hover {
+  color: #007bff;
+}
