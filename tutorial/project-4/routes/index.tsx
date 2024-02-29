@@ -1,12 +1,23 @@
+import { FreshContext, Handlers, PageProps } from "$fresh/server.ts";
 import ContactList from "../components/ContactList.tsx";
+import { Contact } from "../types.ts";
+import ContactModel from "../db/Contact.ts";
 
-export default function Home() {
+type Data = {
+  contacts: Array<Contact>;
+};
+
+export const handler: Handlers<Data> = {
+  GET: async (_req: Request, ctx: FreshContext<unknown, Data>) => {
+    const contacts = await ContactModel.find();
+    return ctx.render({ contacts });
+  },
+};
+
+export default function Home(props: PageProps<Data>) {
   return (
     <ContactList
-      contacts={[
-        { id: "1", name: "John Doe", email: "john@gmail.com" },
-        { id: "2", name: "Jane Doe", email: "jane@gmail.com" },
-      ]}
+      contacts={props.data.contacts}
     />
   );
 }

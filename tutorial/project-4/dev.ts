@@ -5,4 +5,6 @@ import config from "./fresh.config.ts";
 
 import "$std/dotenv/load.ts";
 
+console.log("Starting dev server...");
+
 await dev(import.meta.url, "./main.ts", config);
