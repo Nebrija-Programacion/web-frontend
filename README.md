@@ -81,3 +81,8 @@ Buscar datos por ciudad o por país y navegar entre ellos
 - Demo:https://fresh-project-4.deno.dev/
 - Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-4)
 
+#### Tutorial 9
+
+- Renderizado en el cliente
+- Hook de estado
+- [Video Youtube](https://youtu.be/Rs9lJC_w6Go)
