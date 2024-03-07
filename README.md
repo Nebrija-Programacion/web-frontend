@@ -81,3 +81,10 @@ Buscar datos por ciudad o por país y navegar entre ellos
 - Demo:https://fresh-project-4.deno.dev/
 - Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-4)
 
+#### Tutorial 9
+
+- Renderizado en el cliente
+- [Documentacíon Fresh](https://fresh.deno.dev/docs/concepts/islands)
+- Hook de estado
+- [Documentacíon Preact](https://preactjs.com/guide/v10/hooks/#usestate)
+- [Video Youtube](https://youtu.be/Rs9lJC_w6Go)
