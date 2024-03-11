@@ -1,0 +1,109 @@
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+div.notificationOK {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #335e43;
+    font-size: 0.875rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    border: 1px solid #86efac;
+    box-shadow: 0 0 5px rgba(134, 239, 172, 0.5);
+    background-color: rgba(134, 239, 172, 0.1);
+    margin:auto;
+    margin-top: 30px;
+    width: auto;
+    padding: 0.5rem;
+    max-width: 30rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 30rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  form{
+  display: grid;
+  grid-template-columns: 100px auto;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  label {
+    font-size: 1.125rem;
+  }
+  .span-2 {
+    grid-column: span 2;
+  }
+  .error{
+    color: #ff4e33;
+    font-size: 0.875rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ff4e33;
+    box-shadow: 0 0 5px rgba(255, 78, 51, 0.5);
+    background-color: rgba(255, 78, 51, 0.1);
+    margin:auto;
+    width: 100%
+
+  }
+  input {
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    :focus {
+      outline: none;
+      border-color: #86efac;
+    }
+
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+    background-color: #86efac;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+      background-color: #4ade80;
+    }
+
+    &[disabled] {
+      background-color: #e5e7eb;
+      color: #333;
+      cursor: not-allowed;
+    }
+  }
+
+  button.reset {
+    background-color: #ff7e67;
+    &:hover {
+      background-color: #ff4e33;
+    }
+  }
+}
+}
