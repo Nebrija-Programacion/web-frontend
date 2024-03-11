@@ -62,9 +62,8 @@ Buscar datos por ciudad o por país y navegar entre ellos
 
 ##### Proyecto #3
 
- - Crear un listado con los personajes de la página 1 de Rick&Morty (https://rickandmortyapi.com/api/character)
- - Aplicar estilos según la demo (usar flex -- para aprender: https://flexboxfroggy.com/#es )
-
+- Crear un listado con los personajes de la página 1 de Rick&Morty (https://rickandmortyapi.com/api/character)
+- Aplicar estilos según la demo (usar flex -- para aprender: https://flexboxfroggy.com/#es )
 - Demo:https://fresh-project-3.deno.dev/
 - Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-3)
 
@@ -75,9 +74,8 @@ Buscar datos por ciudad o por país y navegar entre ellos
 
 ##### Proyecto #4
 
- - Agenda de contactos
- - La demo carece de funcionalidad que debe añadir el alumno. Se añadirá la funcionalidad completa tras la clase
-
+- Agenda de contactos
+- La demo carece de funcionalidad que debe añadir el alumno. Se añadirá la funcionalidad completa tras la clase
 - Demo:https://fresh-project-4.deno.dev/
 - Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-4)
 
@@ -95,7 +93,6 @@ Buscar datos por ciudad o por país y navegar entre ellos
 
 ##### Proyecto #5
 
- - Añadir contacto con validación de datos
- - Llamada a API desde cliente
-
+- Añadir contacto con validación de datos
+- Llamada a API desde cliente
 - Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-5)
