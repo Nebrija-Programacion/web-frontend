@@ -96,3 +96,26 @@ Buscar datos por ciudad o por país y navegar entre ellos
 - Añadir contacto con validación de datos
 - Llamada a API desde cliente
 - Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-5)
+
+#### Tutorial 11
+ - Llamadas a API desde cliente
+ - [Video Youtube](https://youtu.be/ueXKTdEf2dg)
+
+ ##### Proyecto #6
+
+- Mostrar datos API client side con API server side
+- Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-6)
+
+##### Examen Parcial 1
+
+- Agenda Client Side
+- Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/examenes/2324/parcial/grupo-A)
+
+##### Examen Parcial 2
+
+- Diccionario Client Side
+- Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/examenes/2324/parcial/grupo-B)
+
+#### Tutorial 12
+ - Compartiendo estado entre componentes hermanos
+ - [Video Youtube](https://youtu.be/RTbhoE7uNhU)
