@@ -31,5 +31,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "fresh-shop"
-          entrypoint: "./tutorial/project-7/main.ts"
+          entrypoint: "main.ts"
           root: "./tutorial/project-7"
