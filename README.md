@@ -119,3 +119,9 @@ Buscar datos por ciudad o por país y navegar entre ellos
 #### Tutorial 12
  - Compartiendo estado entre componentes hermanos
  - [Video Youtube](https://youtu.be/RTbhoE7uNhU)
+
+##### Proyecto #7
+
+- Agenda de contactos
+- Demo en Deno Deploy https://fresh-project-7.deno.dev/
+- Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-7)
