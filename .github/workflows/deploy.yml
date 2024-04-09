@@ -1,6 +1,5 @@
 name: Deploy
 on:
-  workflow_dispatch:
   push:
     branches: master
   pull_request:
@@ -30,6 +29,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "fresh-shop"
+          project: "project-7"
           entrypoint: "main.ts"
           root: "./tutorial/project-7"
