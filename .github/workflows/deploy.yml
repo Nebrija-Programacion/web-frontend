@@ -29,6 +29,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "project-7"
+          project: "fresh-project-7"
           entrypoint: "main.ts"
           root: "./tutorial/project-7"
