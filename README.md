@@ -125,3 +125,7 @@ Buscar datos por ciudad o por país y navegar entre ellos
 - Agenda de contactos
 - Demo en Deno Deploy https://fresh-project-7.deno.dev/
 - Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-7)
+
+#### Tutorial 13
+ - Hook de efecto (useEffect)
+ - [Video Youtube](https://youtu.be/NE6_lZ4ApV0)
