@@ -1,0 +1,124 @@
+.products {
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    border-bottom: 1px solid #aaa;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 20px;
+  }
+
+  .item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+
+    &:last-child {
+      border-bottom: none;
+    }
+    padding-bottom: 20px;
+
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+      width: 150px;
+    }
+    .description {
+      font-size: 14px;
+      color: #666;
+      text-align: left;
+      width: 300px;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      width: 100px;
+    }
+
+    .add {
+      background-color: #4caf50;
+      color: white;
+      padding: 0px 0px;
+      border-radius: 50%;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+
+    .remove {
+      background-color: #f00;
+      color: white;
+      padding: 0px 0px;
+      border-radius: 50%;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #d00;
+      }
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+  }
+}
+.checkout-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: #45a049;
+  }
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #aaa;
+
+  .total-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .total-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+}

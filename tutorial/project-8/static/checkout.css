@@ -1,0 +1,68 @@
+.checkout {
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+}
+.checkout h1 {
+  font-size: 24px;
+  margin-bottom: 50px;
+  text-align: center;
+
+  border-bottom: 1px solid #aaa;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.checkout form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout form h2 {
+  margin-bottom: 20px;
+}
+
+.checkout form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.checkout form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.checkout form button:hover {
+  background-color: #45a049;
+}
+
+.checkout form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.checkout form label {
+  margin-bottom: 10px;
+}

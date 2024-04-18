@@ -1,0 +1,25 @@
+{
+  "build_id": "61d83e141278a15b52ad6a55a43a48b3185fc9bb",
+  "files": {
+    "main.js": [
+      "chunk-IKHDGLJC.js",
+      "chunk-FEDUQ665.js"
+    ],
+    "deserializer.js": [],
+    "signals.js": [
+      "chunk-OI2AEMTX.js",
+      "chunk-FEDUQ665.js"
+    ],
+    "island-shop.js": [
+      "chunk-IKHDGLJC.js",
+      "chunk-OI2AEMTX.js",
+      "chunk-FEDUQ665.js"
+    ],
+    "chunk-IKHDGLJC.js": [],
+    "chunk-OI2AEMTX.js": [
+      "chunk-FEDUQ665.js"
+    ],
+    "chunk-FEDUQ665.js": [],
+    "metafile.json": []
+  }
+}
