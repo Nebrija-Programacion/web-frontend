@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "dev": "deno run -A --watch main.ts"
+  },
+  "imports": {
+    "@oak/oak": "jsr:@oak/oak@^15.0.0"
+  }
+}
