@@ -12,6 +12,18 @@ router.get("/products/:type", (context: RouterContext<"/products/:type">) => {
 });
 
 const app = new Application();
+
+// avoid cors error
+app.use(async (context, next) => {
+  context.response.headers.set("Access-Control-Allow-Origin", "*");
+  context.response.headers.set(
+    "Access-Control-Allow-Methods",
+    "GET, POST, PUT, DELETE"
+  );
+  context.response.headers.set("Access-Control-Allow-Headers", "Content-Type");
+  await next();
+});
+
 app.use(router.routes());
 app.use(router.allowedMethods());
 
