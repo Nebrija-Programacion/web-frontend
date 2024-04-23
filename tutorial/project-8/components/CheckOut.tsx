@@ -1,13 +1,60 @@
 import { Signal } from "@preact/signals";
 import { FunctionalComponent } from "preact";
 import { CartItem, Pages } from "../types.ts";
+import { useEffect, useState } from "preact/hooks";
 
 type Props = {
   cart: Signal<CartItem[]>;
   page: Signal<Pages>;
 };
 
+type Country = {
+  name: string;
+  code: string;
+};
+
+type CountryResponse = {
+  data: { [key: string]: { country: string } };
+};
+
 const CheckOut: FunctionalComponent<Props> = ({ cart, page }) => {
+  const [country, setCountry] = useState<string>("");
+  const [city, setCity] = useState<string>("");
+  const [countries, setCountries] = useState<Country[]>([]);
+  const [cities, setCities] = useState<string[]>([]);
+
+  useEffect(() => {
+    fetch("https://api.first.org/data/v1/countries?region=europe")
+      .then((response) => response.json())
+      .then((data) => {
+        const ctries = Object.keys(data.data).map((key) => ({
+          name: data.data[key].country,
+          code: key,
+        }));
+        setCountries(ctries);
+        setCountry(ctries[0].code);
+      });
+  }, []);
+
+  useEffect(() => {
+    const fetchCities = async (countryISO: string) => {
+      const response = await fetch(
+        "https://countriesnow.space/api/v0.1/countries/cities",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ iso2: countryISO }),
+        }
+      );
+      const data = await response.json();
+      setCities(data.data);
+      setCity(data.data[0]);
+    };
+    if (country !== "") fetchCities(country);
+  }, [country]);
+
   const totalPrice = cart.value.reduce(
     (acc, item) => acc + item.product.price * item.quantity,
     0
@@ -21,28 +68,43 @@ const CheckOut: FunctionalComponent<Props> = ({ cart, page }) => {
         <input type="text" id="name" name="name" required />
         <label for="address">Address</label>
         <input type="text" id="address" name="address" required />
-        <label for="phone">Country</label>
-        <select id="country" name="country" required>
-          <option value="spain">Spain</option>
-          <option value="france">France</option>
-          <option value="italy">Italy</option>
-          <option value="germany">Germany</option>
-        </select>
-        Get countries with this API{" "}
-        <a href="https://api.first.org/v1/get-countries">
-          https://api.first.org/v1/get-countries
-        </a>
-        <label for="city">City</label>
-        <select id="city" name="city" required>
-          <option value="madrid">Madrid</option>
-          <option value="paris">Paris</option>
-          <option value="rome">Rome</option>
-          <option value="berlin">Berlin</option>
-        </select>
-        Get cities for a country with this API{" "}
-        <a href="https://documenter.getpostman.com/view/1134062/T1LJjU52#2e131a94-a28e-4cfe-95fe-d10c0e40eae7">
-          https://documenter.getpostman.com/
-        </a>
+        {countries.length > 0 && (
+          <>
+            <label for="country">Country</label>
+            <select
+              value={country}
+              id="country"
+              name="country"
+              onChange={(e) => setCountry(e.currentTarget.value)}
+              required
+            >
+              {countries.map((country) => (
+                <option key={country.code} value={country.code}>
+                  {country.name}
+                </option>
+              ))}
+            </select>
+          </>
+        )}
+        {cities.length > 0 && (
+          <>
+            <label for="city">City</label>
+            <select
+              value={city}
+              id="city"
+              name="city"
+              onChange={(e) => setCity(e.currentTarget.value)}
+              required
+            >
+              {cities.map((city) => (
+                <option key={city} value={city}>
+                  {city}
+                </option>
+              ))}
+            </select>
+          </>
+        )}
+
         <label for="payment">Payment method</label>
         <select id="payment" name="payment" required>
           <option value="card">Card</option>
