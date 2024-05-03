@@ -129,3 +129,26 @@ Buscar datos por ciudad o por país y navegar entre ellos
 #### Tutorial 13
  - Hook de efecto (useEffect)
  - [Video Youtube](https://youtu.be/NE6_lZ4ApV0)
+
+##### Proyecto #8
+
+- Tienda Client Side
+- Demo en Deno Deploy https://fresh-project-8.deno.dev/
+- Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-8)
+
+
+##### Proyecto #9
+
+- Tienda Server Side
+- Demo en Deno Deploy https://fresh-project-9.deno.dev/
+- Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-9)
+
+
+#### Tutorial 14
+ - Cookies Server Side
+ - [Video Youtube](https://youtu.be/rj_eXlOS_Ho)
+
+##### Proyecto #10
+
+- Tienda Server Side (con cookies server side)
+- Solución:[Github](https://github.com/Nebrija-Programacion/web-frontend/tree/master/tutorial/project-10)
