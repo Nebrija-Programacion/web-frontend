@@ -31,4 +31,4 @@ jobs:
         with:
           project: "fresh-project-11"
           entrypoint: "main.ts"
-          root: "./tutorial/project-9/"
+          root: "./tutorial/project-11/"
