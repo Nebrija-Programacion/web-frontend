@@ -1,0 +1,49 @@
+.login-box {
+  max-width: fit-content;
+  margin: 100px auto; /* Centering the login box vertically and horizontally */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a shadow for depth */
+  border: 1px solid #ddd; /* Consistent with your style */
+  border-radius: 8px; /* Smooth rounded corners */
+
+  h2 {
+    font-size: 24px; /* Matching h1 but for h2 */
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa; /* Subtle line under the header */
+  }
+
+  .form-field {
+    display: block;
+    margin: 10px 0; /* Space between inputs */
+    width: 100%; /* Full width inputs */
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .submit-button {
+    background-color: #4caf50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+  }
+}
