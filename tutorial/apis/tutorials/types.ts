@@ -1,17 +1,20 @@
-export type Product = {
-  id: number;
-  name: string;
-  price: number;
+export type Video = {
+  id: string;
+  title: string;
   description: string;
-  image: string;
+  url: string;
+  thumbnail: string;
 };
 
-export type CartItem = {
-  product: Product;
-  quantity: number;
+export type User = {
+  id: string;
+  username: string;
+  password: string;
+  videosFav: string[];
 };
 
-export enum Pages {
-  SHOP = "shop",
-  CART = "cart",
-}
+export type videosResponse = {
+  videosList: Array<Video & { isFav: boolean }>;
+};
+
+export type userResponse = Omit<User, "password">;
