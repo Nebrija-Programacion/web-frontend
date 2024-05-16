@@ -8,7 +8,7 @@ Para la obtención de los vídeos, el marcar/desmarcar vídeos como favoritos, y
 Para la obtención de los vídeos existen 2 endpoints:
 
  - **GET: /videos/:userid**   
- - **GET: /videos/:userid/:videoid**
+ - **GET: /video/:userid/:videoid**
 
 ####  /videos/:userid  
 
