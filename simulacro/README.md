@@ -3,7 +3,7 @@
 Se pide realizar una web que implemente la misma funcionalidad y estilo que la web [https://videoapp.deno.dev/](https://videoapp.deno.dev/) . Además se debe realizar del mismo modo rende-side y client-side
 
 Para la obtención de los vídeos, el marcar/desmarcar vídeos como favoritos, y para el login y registro de usuarios se usa la siguiente API:
-- https://videoapp-api.deno.dev/video
+- https://videoapp-api.deno.dev
 
 Para la obtención de los vídeos existen 2 endpoints:
 
@@ -117,6 +117,6 @@ Se puede tambien usar Postman (o programa equivalente) y un navegador para consu
  - Registro: **2 puntos** (con login automático tras registrarse).
  - Login: **3 puntos** (y gestión de la sesión).
  - Listado de vídeos: **2 puntos**.
- - Página de video: **2 punto**.
+ - Página de video: **2 puntos**.
  - Marcar vídeos como favoritos: **2 puntos**.
  - Buenas prácticas de código: **3 puntos**.
