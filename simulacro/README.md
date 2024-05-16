@@ -43,7 +43,7 @@ Status:
  - **Otros no controlados**
  
  Para la gestión de usuarios existen dos endpoint: 
- - **POST /login**
+ - **POST /checkuser**
  - **POST /register**
 
  #### /checkuser
