@@ -1,0 +1,44 @@
+.video-detail-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.video-frame {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.video-detail-title {
+  font-size: 1.8rem;
+  color: #333333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.video-detail-description {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 1.5rem;
+}
+
+.back-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1.5rem;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}

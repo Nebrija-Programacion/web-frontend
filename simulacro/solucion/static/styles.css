@@ -1,0 +1,35 @@
+@import url(/forms.css);
+@import url(/videolist.css);
+@import url(/videodetail.css);
+@import url(/header.css);
+
+/* Reset de CSS básico para asegurar consistencia entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.register-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.register-link a:hover {
+  color: #0056b3;
+}

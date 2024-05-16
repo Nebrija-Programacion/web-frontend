@@ -43,11 +43,11 @@ Status:
  - **Otros no controlados**
  
  Para la gestión de usuarios existen dos endpoint: 
- - POST /login
- - POST /register
+ - **POST /login**
+ - **POST /register**
 
- #### /login
- Se le debe pasar a través del body el objeto
+ #### /checkuser
+ Se le debe pasar a través del *body* el objeto
  ```json
  { 
     email,
@@ -67,7 +67,7 @@ Status:
  -  - **Otros no controlados**
  
  #### /register
- Se le debe pasar a través del body el objeto
+ Se le debe pasar a través del *body* el objeto
  ```json
  { 
     email,
@@ -103,18 +103,20 @@ Para realizar este simulacro de examen solo se pueden usar las siguientes webs:
  - https://deno.com/
  - https://developer.mozilla.org/
  - https://www.npmjs.com/
+ - https://www.npmjs.com/package/jsonwebtoken
+ - https://www.npmjs.com/package/axios
  - https://preactjs.com/
 
-Se puede tambien usar Postman (o programa equivalente) y en navegador para consultar la API
+Se puede tambien usar Postman (o programa equivalente) y un navegador para consultar la API
 
  - Para aquellos alumnos que no hagan el registro **ya existe una cuenta creada con su correo nebrija**, siendo **la contraseña su DNI**
- - Para aquellos alumnos que no hagan el login pueden usar como userid para las llamadas a la API el valor _664371ea54be82d8fdc2a6a9_
+ - Para aquellos alumnos que no hagan el login pueden usar como *userid* para las llamadas a la API el valor *000000000000000000000000*
 
 **PUNTUACIÓN**
 
- - Registro: 2 puntos (con login automático tras registrarse).
- - Login: 3 puntos (y gestión de la sesión).
- - Listado de vídeos: 2 puntos.
- - Página de video: 2 punto.
- - Marcar vídeos como favoritos: 2 puntos.
- - Buenas prácticas de código: 3 puntos.
+ - Registro: **2 puntos** (con login automático tras registrarse).
+ - Login: **3 puntos** (y gestión de la sesión).
+ - Listado de vídeos: **2 puntos**.
+ - Página de video: **2 punto**.
+ - Marcar vídeos como favoritos: **2 puntos**.
+ - Buenas prácticas de código: **3 puntos**.
