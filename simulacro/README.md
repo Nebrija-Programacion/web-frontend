@@ -89,9 +89,7 @@ Status:
  
  Para marcar/dermarcar un video como favorito se usa el siguiente endpoint:
 
-  - **POST: /favorite/:userid/:videoid**
-
-  por ejemplo: https://videoapp-api.deno.dev/favorite/664371ea54be82d8fdc2a6a9/66422f4b5a922dd78912958d
+  - **POST: /fav/:userid/:videoid**
 
   Status: **200** si todo va OK. Si era favorita pasa a no serlo y viceversa.
 
