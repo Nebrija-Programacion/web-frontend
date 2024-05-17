@@ -1,6 +1,6 @@
 # Simulacro de Examen
 
-Se pide realizar una web que implemente la misma funcionalidad y estilo que la web [https://videoapp.deno.dev/](https://videoapp.deno.dev/) . Además se debe realizar del mismo modo rende-side y client-side
+Se pide realizar una web que implemente la misma funcionalidad y estilo que la web [https://videoapp.deno.dev/](https://videoapp.deno.dev/) . Además se debe realizar del mismo modo server-side y client-side
 
 Para la obtención de los vídeos, el marcar/desmarcar vídeos como favoritos, y para el login y registro de usuarios se usa la siguiente API:
 - https://videoapp-api.deno.dev
