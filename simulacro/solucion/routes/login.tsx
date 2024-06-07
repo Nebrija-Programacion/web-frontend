@@ -71,7 +71,7 @@ export const handler: Handlers = {
         name: "auth",
         value: token,
         sameSite: "Lax", // this is important to prevent CSRF attacks
-        domain: url.hostname,
+        domain: url.hostname.startsWith(".")?url.hostname.substring(1):url.hostname,
         path: "/",
         secure: true,
       });
