@@ -41,7 +41,7 @@ export const handler: Handlers = {
           email,
           password,
         }),
-      },
+      }
     );
 
     if (response.status == 404) {
@@ -61,7 +61,7 @@ export const handler: Handlers = {
         Deno.env.get("JWT_SECRET"),
         {
           expiresIn: "24h",
-        },
+        }
       );
       const headers = new Headers();
 
@@ -71,7 +71,7 @@ export const handler: Handlers = {
         name: "auth",
         value: token,
         sameSite: "Lax", // this is important to prevent CSRF attacks
-        domain: url.hostname.startsWith(".")?url.hostname.substring(1):url.hostname,
+        domain: url.hostname,
         path: "/",
         secure: true,
       });
@@ -88,9 +88,7 @@ export const handler: Handlers = {
 };
 
 const Page = (props: PageProps<Data>) => (
-  <Login
-    message={props.data?.message}
-  />
+  <Login message={props.data?.message} />
 );
 
 export default Page;
