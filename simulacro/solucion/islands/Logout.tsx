@@ -1,7 +1,7 @@
 const Logout = () => {
   const onLogOut = () => {
     // remove cookie
-    document.cookie = "auth=;  path=/;";
+    document.cookie = "";
     // redirect to login
     window.location.href = "/login";
   };
