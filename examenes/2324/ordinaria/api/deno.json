@@ -1,0 +1,9 @@
+{
+  "tasks": {
+    "dev": "deno serve --env -A --watch main.ts"
+  },
+  "imports": {
+    "@hono/hono": "jsr:@hono/hono@^4.5.0",
+    "mongodb": "npm:mongodb@^6.8.0"
+  }
+}
