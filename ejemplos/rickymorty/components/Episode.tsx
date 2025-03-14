@@ -13,7 +13,7 @@ type Props = {
   };
 };
 
-const Espisode: FunctionComponent<Props> = (props) => {
+const Episode: FunctionComponent<Props> = (props) => {
   const { id, name, air_date, characters, episode } = props.episode;
   return (
   <>
@@ -35,3 +35,5 @@ const Espisode: FunctionComponent<Props> = (props) => {
     </div>
   </>)
 };
+
+export default Episode;

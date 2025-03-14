@@ -19,7 +19,7 @@ const CharacterContainer: FunctionalComponent<Props> = (props) => {
     <div class="characterContainer">
       <h1>{ch.name}</h1>
     <CharacterComponent name={ch.name} origin={ch.origin} status={ch.status} image={ch.image}/>
-      <ul>{ch.episodes.map((ep) => <li key={ep.id}>{ep.name}</li>)}</ul>
+      <ul>{ch.episodes.map((ep) => <li key={ep.id}><a href={`/episode/${ep.id}`}>{ep.name}</a></li>)}</ul>
     </div>
   );
 };

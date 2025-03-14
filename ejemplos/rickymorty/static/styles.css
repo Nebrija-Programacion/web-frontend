@@ -1,3 +1,8 @@
+a{
+    text-decoration: none;
+    color: gray;
+}
+
 .charactersContainer{
     display: flex;
     flex-direction: row;
@@ -5,10 +10,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    a{
-        text-decoration: none;
-        color: inherit;
-    }
+
 }
 
 .characterCard{

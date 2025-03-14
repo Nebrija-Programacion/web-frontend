@@ -24,6 +24,7 @@ type CharacterAPI = {
     image: string;
 }
 
+
 type EpisodeAPI = {
     name: string;
     id: string;
