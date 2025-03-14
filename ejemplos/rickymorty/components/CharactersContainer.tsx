@@ -3,7 +3,7 @@ import CharacterCard from "./CharacterCard.tsx";
 
 type Character = {
   name: string;
-  img: string;
+  image: string;
   id: string;
 };
 
@@ -14,8 +14,10 @@ type Props = {
 const CharactersContainer: FunctionalComponent<Props> = (props) => {
   const characters = props.characters;
   return (
-    <div>
-      {characters.map((ch) => <CharacterCard key={ch.id} character={ch} />)}
+    <div class="charactersContainer">
+      {characters.map((ch) => (<a href={`/character/${ch.id}`}><CharacterCard key={ch.id} character={ch} /></a>)) }
     </div>
   );
 };
+
+export default CharactersContainer;

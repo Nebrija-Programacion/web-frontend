@@ -1,0 +1,29 @@
+.charactersContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.characterCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    img{
+        border-radius: 50%;
+        width: 175px;
+        height: 175px;
+    }
+    div{
+        font-weight: bold;
+    }
+}
+

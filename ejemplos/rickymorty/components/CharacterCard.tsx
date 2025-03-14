@@ -3,16 +3,16 @@ import { FunctionalComponent } from "preact/src/index.d.ts";
 type Props = {
     character:{
         name: string,
-        img: string,
+        image: string,
     }
 }
 
 const CharacterCard: FunctionalComponent<Props> = (props) => {
-    const {name, img} = props.character;
+    const {name, image} = props.character;
     
     return(
-        <div>
-            <img src={img} alt={name}/>
+        <div class="characterCard">
+            <img src={image} alt={name}/>
             <div>{name}</div>
         </div>
     )
