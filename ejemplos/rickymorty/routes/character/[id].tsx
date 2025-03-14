@@ -1,5 +1,6 @@
 import Axios from "axios";
 import { FreshContext, Handlers, PageProps } from "$fresh/server.ts";
+import CharacterContainer from "../../components/CharacterContainer.tsx";
 
 type Character = {
     id: string;
@@ -51,3 +52,7 @@ export const handler: Handlers = {
         }
     }
 };
+
+const Page = (props:PageProps<Data>) => <CharacterContainer character={props.data.character}/>
+
+export default Page;
