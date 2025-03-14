@@ -16,7 +16,7 @@ type Props = {
 const CharacterContainer: FunctionalComponent<Props> = (props) => {
   const ch = props.character;
   return (
-    <div>
+    <div class="characterContainer">
       <h1>{ch.name}</h1>
     <CharacterComponent name={ch.name} origin={ch.origin} status={ch.status} image={ch.image}/>
       <ul>{ch.episodes.map((ep) => <li key={ep.id}>{ep.name}</li>)}</ul>

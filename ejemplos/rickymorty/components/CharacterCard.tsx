@@ -1,3 +1,4 @@
+import { checkIdentifier } from "$std/semver/_shared.ts";
 import { FunctionalComponent } from "preact/src/index.d.ts";
 
 type Props = {

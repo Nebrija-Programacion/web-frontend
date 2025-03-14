@@ -9,7 +9,7 @@ type Props = {
 
 const Character: FunctionalComponent<Props> = (props) => {
     return (
-        <div>
+        <div class="characterComponent">
             <img src={props.image} alt={props.name}/>
             <div>
                 <div>Status: {props.status}</div>

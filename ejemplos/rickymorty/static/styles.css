@@ -27,3 +27,16 @@
     }
 }
 
+.characterContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.characterComponent{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
