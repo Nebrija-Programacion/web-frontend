@@ -3,19 +3,23 @@ import { FunctionalComponent } from "preact/src/index.d.ts";
 
 const Formulario: FunctionalComponent = () => {
 
-    const [input, setInput] = useState<string>("");
+    const [telefono, setTelefono] = useState<string>("");
+    const [error, setError] = useState<boolean>(false);
 
    const handleClick = (e: Event) => {
-        
-   }
+    if(telefono.length!==9){
+        setError(true);
+   }}
    
    return (<div>
-        <input type="text" name="telefono" placeholder="Telefono" value={input} onInput={(e)=>{
+        <input type="text" name="telefono" placeholder="Telefono" value={telefono} 
+        onInput={(e)=>{
+            setError(false);
             const newValue = e.currentTarget.value;
-            setInput(newValue);
+            setTelefono(newValue);
         }} />
         <button type="button" onClick={handleClick}>Enviar</button>
-        <div>{input}</div>
+        {error && <div>El numero debe tener 9 digitos. Tinee {telefono.length}</div>}
     </div>)
 }
 
