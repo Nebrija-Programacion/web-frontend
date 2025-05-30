@@ -1,34 +1,27 @@
-import { FreshContext, Handler } from "$fresh/server.ts";
-import { resetPropWarnings } from "preact/debug/src/index.d.ts";
+import { FreshContext, Handler, MiddlewareHandler } from "$fresh/server.ts";
 
 type State = {
-  dni: string;
+  name: string;
 }
 
-export const handler = async (req: Request, ctx: FreshContext<State>) => {
-  // check if cookie exists
-  console.log("Middleware for /characters");
-  const cookie = req.headers.get("Cookie");
-  if (cookie && cookie.includes("dni=")) {
-    // if cookie exists, redirect to /greet
-    
-    const dni = cookie.split("dni=")[1].split(";")[0];
-    // verifico en mongo si el dni existe
-    console.log("DNI from cookie: ", dni);
-    ctx.state.dni =  dni ;
-    const resp = await ctx.next();
-    return resp;
-  } else {
-    // redirect to /login
-    const headers = new Headers();
-    headers.set("Location", "/");
-    return new Response("Redirecting to /", {
-      status: 302,
-      headers,
-    });
+export const handler:MiddlewareHandler<State> = async (req: Request, ctx: FreshContext<State>) => {
+  const headers = req.headers;
+  const cookie = headers.get("Cookie");
+  const cookies = cookie?.split(";");
+  const name_cookie = cookies?.find(c => c.trim().startsWith("name="));
+  if(name_cookie){
+    const userName = name_cookie?.split("=")[1];
+    ctx.state = {name: userName};
+    const next = await ctx.next();
+    return next;
   }
-};
 
-
-
-
+  return new Response(null,
+    {
+      status: 302,
+      headers: {
+        location: "/"
+      }
+    }
+  );
+}

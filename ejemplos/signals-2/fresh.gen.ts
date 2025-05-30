@@ -2,23 +2,29 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $_platform_middleware from "./routes/(platform)/_middleware.ts";
-import * as $_platform_characters from "./routes/(platform)/characters.tsx";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
+import * as $api_joke from "./routes/api/joke.ts";
+import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
-
+import * as $IslandOne from "./islands/IslandOne.tsx";
+import * as $IslandThree from "./islands/IslandThree.tsx";
+import * as $IslandTwo from "./islands/IslandTwo.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
-    "./routes/(platform)/_middleware.ts": $_platform_middleware,
-    "./routes/(platform)/characters.tsx": $_platform_characters,
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
+    "./routes/api/joke.ts": $api_joke,
+    "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
   },
-  islands: {},
+  islands: {
+    "./islands/IslandOne.tsx": $IslandOne,
+    "./islands/IslandThree.tsx": $IslandThree,
+    "./islands/IslandTwo.tsx": $IslandTwo,
+  },
   baseUrl: import.meta.url,
 } satisfies Manifest;
 
